@@ -1,22 +1,21 @@
 import { Component,OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 import { InventarioService } from '../inventario.service';
+import { error } from 'console';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-formulario-inventario',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [],
+  templateUrl: './formulario-inventario.component.html',
+  styleUrl: './formulario-inventario.component.css'
 })
-export class AppComponent implements OnInit{
+export class FormularioInventarioComponent implements OnInit{
+
+
   formData: any = {}
   constructor(private inventarioService: InventarioService) { }
   ngOnInit():void{}
 }
-
-
 
 
 submitForm() {
